@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://localhost:52675/Home.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the rich history and innovation behind the BMW M3 series.">
+    <title>BMW M3 Legacy</title>
+    <link rel="stylesheet" href="./BMW M3 Legacy_files/home.css">
+    <link rel="icon" href="./BMW M3 Legacy_files/bmw_logo_PNG19699.png" type="image/png">
+</head>
+<body>
+
+
+    <header class="m-stripes">
+        <div class="brand">
+            <img src="./BMW M3 Legacy_files/bmw_logo_PNG19699.png" alt="BMW Logo">
+            <h1>Sheer Driving <strong>Pleasure</strong></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://localhost:52675/History.html" class="active">History</a></li>
+                <li><a href="http://localhost:52675/FeedbackForm.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION with background slideshow -->
+    <section class="hero-section">
+        <div class="slideshow" style="background-image: url(&quot;pictures/g80m3.jpg&quot;); opacity: 0;"></div>
+        <div class="hero-text">
+            <h2>Welcome to the Legacy of the BMW M3</h2>
+            <p>The BMW M3 isn’t just a car — it’s a revolution in motion.</p>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+        <section>
+            <h2>Why This Website Exists</h2>
+            <p>This website pays homage to one of the most iconic vehicles in the world. We aim to show — through facts and history — that the BMW M3 is more than a car. It's a cultural and technological milestone that continues to set the standard for performance.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>2025 BMW M3 Legacy. Created for educational purposes.</p>
+    </footer>
+
+    <!-- JavaScript for Background Slideshow -->
+    <script>
+        const slideshow = document.querySelector('.slideshow');
+        const images = [
+            'pictures/BMW E30 M3 black.jpeg',
+            'pictures/e36.jpeg',
+            'pictures/E46 M3 ZCP.jpeg',
+            'pictures/bmw e92.jpeg',
+            'pictures/M3.jpeg',
+            'pictures/g80m3.jpg'
+        ];
+
+        let index = 0;
+
+        function showNextImage() {
+            slideshow.style.opacity = 0;
+            setTimeout(() => {
+                slideshow.style.backgroundImage = `url('${images[index]}')`;
+                slideshow.style.opacity = 1;
+                index = (index + 1) % images.length;
+            }, 500); // transition duration
+        }
+
+        // Initialize
+        slideshow.style.backgroundImage = `url('${images[0]}')`;
+        setInterval(showNextImage, 5000); // change image every 5 seconds
+    </script>
+
+
+<footer>
+    <div class="footer-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Have a question or want to share your M3 story? Reach out below.</p>
+            <p>Email: <a href="mailto:bmw.m3.legacy@gmail.com">bmw.m3.legacy@gmail.com</a></p>
+        </div>
+
+
+
+        <!-- Footer Note -->
+        <div class="footer-note">
+            <p>© 2025 BMW M3 Legacy. Created for educational purposes.</p>
+        </div>
+
+    </div>
+</footer>
+
+
+</body></html>
